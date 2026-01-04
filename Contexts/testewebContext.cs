@@ -9,7 +9,7 @@ namespace testeweb.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=c:\\mydb.db;Version=3;"); //https://www.connectionstrings.com/sqlite/
+            optionsBuilder.UseSqlite("Data Source=Todo.db"); //https://www.connectionstrings.com/sqlite/
         }
     }
 }
