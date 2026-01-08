@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using testeweb.Models;
 
+// esse arquivo determina a conexao com o banco de dados
+
 namespace testeweb.Contexts
 {
     public class testewebContext : DbContext

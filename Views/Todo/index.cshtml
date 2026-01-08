@@ -1,0 +1,30 @@
+@model List<testeweb.Models.Todo> // @model:declara qual model sera utilizado 
+    <h1>Tarefas</h1>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">Titulo</th>
+				<th scope="col">Criado em</th>
+				<th scope="col">Data de entrega</th>
+				<th scope="col">Finalizado em</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var todo in Model)
+			{
+				<tr>
+					<td>@todo.Id</td>
+					<td>@todo.Titulo</td>
+					<td>@todo.CreatedAt</td>
+					<td>@todo.DeadLine</td>
+					<td>@todo.FinishedAt</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+
+
+
